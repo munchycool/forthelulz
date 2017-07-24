@@ -10,6 +10,7 @@ import sys, urllib
 import xbmc, xbmcgui, xbmcaddon, xbmcplugin
 
 #function to play a media. 4 parameters with mediaType hardcoded as video
+def playMedia(title, thumbnail, link, mediaType='Video') :
     """Plays a video
 
     Arguments:
@@ -18,13 +19,12 @@ import xbmc, xbmcgui, xbmcaddon, xbmcplugin
     link: the link to the media to be played
     mediaType: the type of media to play, defaults to Video. Known values are Video, Pictures, Music and Programs
     """
-
-def playMedia(title, thumbnail, link, mediaType='Video') :
     li = xbmcgui.ListItem(label=title, iconImage=thumbnail, thumbnailImage=thumbnail, path=link)
     li.setInfo(type=mediaType, infoLabels={ "Title": title })
     xbmc.Player().play(item=link, listitem=li)
 
 
+def parseParameters(inputString=sys.argv[2]):
     """Parses a parameter string starting at the first ? found in inputString
     
     Argument:
@@ -32,7 +32,6 @@ def playMedia(title, thumbnail, link, mediaType='Video') :
     
     Returns a dictionary with parameter names as keys and parameter values as values
     """
-def parseParameters(inputString=sys.argv[2]):
     parameters = {}
     p1 = inputString.find('?')
     if p1 >= 0:
