@@ -31,7 +31,9 @@ home_folder  = xbmc.translatePath('special://home/')# Convert the special path o
 
 
 # 002 start
-link = "http://www.vidsplay.com/wp-content/uploads/2017/04/alligator.mp4"
+#link = "http://www.vidsplay.com/wp-content/uploads/2017/04/alligator.mp4"
+# link = "https://drive.google.com/file/d/0BzZ_8k1jNVGILUktQjdEQ0lkS00/preview"
+link = "http://justmoviesonline.com/playh.php?id=5969a9bc048e740290fa7866"
 forthelulzfunctions.playMedia(addon_name,addon_icon,link)
 # 002 end
 
