@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.lulzscraper" name="lulzscraper" version="0.0.5" provider-name="munchycool">
+<addon id="plugin.video.lulzscraper" name="lulzscraper" version="0.0.9" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
         <import addon="script.module.beautifulsoup4" version="4.3.2"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="scraper1.py">
+	<extension point="xbmc.python.pluginsource" library="scraper2.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">

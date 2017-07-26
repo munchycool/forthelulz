@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.demo1" name="demo1" version="0.1.2" provider-name="munchycool">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">demo1</summary>
+		<description lang="en">demo1</description>
+		<platform>all</platform>
+		<forum>http://www.lulzscraper.com</forum>
+		<website>www.lulzscraper.com</website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
 <addon id="plugin.video.forthelulz" name="forthelulz" version="0.1.4" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -22,14 +45,14 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.lulzscraper" name="lulzscraper" version="0.0.5" provider-name="munchycool">
+<addon id="plugin.video.lulzscraper" name="lulzscraper" version="0.0.9" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
         <import addon="script.module.beautifulsoup4" version="4.3.2"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="scraper1.py">
+	<extension point="xbmc.python.pluginsource" library="scraper2.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
