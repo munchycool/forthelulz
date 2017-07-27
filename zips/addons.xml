@@ -68,6 +68,29 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.s3arch" name="s3arch" version="0.1.0" provider-name="munchycool">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">s3arch</summary>
+		<description lang="en">s3arch</description>
+		<platform>all</platform>
+		<forum>http://www.s3arch.com</forum>
+		<website>www.s3arch.com</website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
 <addon id="repository.forthelulz" name="forthelulz repo" version="0.0.2" provider-name="forthelulz">
 	<extension point="xbmc.addon.repository" name="forthelulz repo">
 		<dir>
