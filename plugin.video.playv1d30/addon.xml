@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.playv1d30" name="playv1d30" version="0.0.2" provider-name="munchycool">
+<addon id="plugin.video.playv1d30" name="playv1d30" version="0.0.3" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 	</requires>

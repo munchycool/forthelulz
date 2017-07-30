@@ -19,7 +19,6 @@ def play_video(path):
     """
     # Create a playable item with a path to play.
     play_item = xbmcgui.ListItem(path=path)
-    vid_url = play_item.getfilename()
     # Pass the item to the Kodi player.
     xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
 
