@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.v1d30play" name="v1d30play" version="0.0.8" provider-name="munchycool">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		 <import addon="script.module.urlresolver" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="playvideo.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">v1d30play</summary>
+		<description lang="en">v1d30play</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>

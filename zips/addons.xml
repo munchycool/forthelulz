@@ -23,13 +23,16 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.forthelulz" name="forthelulz" version="0.1.4" provider-name="munchycool">
+<addon id="plugin.video.forthelulz" name="forthelulz" version="0.2.3" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.nanscrapers" version="0.5.5" />
-        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+		<!-- <import addon="script.module.nanscrapers" version="0.5.5" /> -->
+        <!-- <import addon="script.module.python.koding.aio" version="0.0.1"/> -->
+		<import addon="script.module.requests" version="2.4.3"/>
+  		<import addon="script.module.urlresolver" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="forthelulz.py">
+	<extension point="xbmc.python.pluginsource" library="tester001.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -38,6 +41,31 @@
 		<platform>all</platform>
 		<forum>http://www.noobsandnerds.com/support</forum>
 		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
+<addon id="plugin.video.hindimoviesonline" name="hindimoviesonline" version="0.2.3" provider-name="forhelulz">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<!-- <import addon="script.module.nanscrapers" version="0.5.5" /> -->
+        <!-- <import addon="script.module.python.koding.aio" version="0.0.1"/> -->
+		<import addon="script.module.requests" version="2.4.3"/>
+  		<import addon="script.module.urlresolver" version="3.0.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">HindiMoviesOnline</summary>
+		<description lang="en">s3arch</description>
+		<platform>all</platform>
+		<forum>http://www.void0.com</forum>
+		<website>www.void0.com</website>
 		<news></news>
 		<genre>movies,tvshows,usa</genre>
 		<video_guide></video_guide>
@@ -68,6 +96,26 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.playv1d30" name="playv1d30" version="0.0.3" provider-name="munchycool">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="playvideo.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">playv1d30</summary>
+		<description lang="en">playv1d30</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
 <addon id="plugin.video.s3arch" name="s3arch" version="0.1.1" provider-name="munchycool">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -84,6 +132,27 @@
 		<platform>all</platform>
 		<forum>http://www.s3arch.com</forum>
 		<website>www.s3arch.com</website>
+		<news></news>
+		<genre>movies,tvshows,usa</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
+<addon id="plugin.video.v1d30play" name="v1d30play" version="0.0.8" provider-name="munchycool">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		 <import addon="script.module.urlresolver" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="playvideo.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">v1d30play</summary>
+		<description lang="en">v1d30play</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
 		<news></news>
 		<genre>movies,tvshows,usa</genre>
 		<video_guide></video_guide>
