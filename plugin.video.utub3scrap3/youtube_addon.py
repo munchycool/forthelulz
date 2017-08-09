@@ -107,6 +107,4 @@ elif mode[0] == 'search':
 
 elif mode[0] == 'play':
     final_link = args['playlink'][0]
-    print "in mode play"
-    print final_link
     play_video(final_link)
