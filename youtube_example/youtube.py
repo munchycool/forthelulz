@@ -9,8 +9,7 @@ mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.
 
 
 
-def bstheurl():
-        sb_url = scrape_url + search_url + search_hardcode
+def bstheurl(sb_url):
         sb_get = requests.get(sb_url, headers = mozhdr)
         soupeddata = BeautifulSoup(sb_get.content, "html.parser")
         yt_links = soupeddata.find_all("a", class_ = "yt-uix-tile-link")
@@ -22,4 +21,5 @@ def bstheurl():
             print yt_title
             
 
-bstheurl()
+sb_url = scrape_url + search_url + search_hardcode
+bstheurl(sb_url)
